@@ -2,6 +2,7 @@ version: "3"
 
 services:
   jupyter:
+    restart: always
     image: jupyter/minimal-notebook
     volumes:
       - .:/home/jovyan/work
